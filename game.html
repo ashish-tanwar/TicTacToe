@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TicTacToe</title>
+    <meta name= "viewport" content= "width=device-width, initial-scale=1.0" >
+    <link rel="stylesheet" href="main.css">
+
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+    <!---<link rel="stylesheet" href="node_modules/skeleton-css/css/skeleton.css">-->
+  </head>
+
+  <body>
+    <!---<div class="header">-->
+    <div class="container">
+
+      <header> <h1>Tic Tac Toe</h1> </header>
+      <br><br><br><br><br>
+
+      <div class="instruction">
+        
+
+        <h3 style="color:black;" >Instructions</h3>
+        <ul>
+          <li>Create TicTacToe : Player-1 creates a game by entering the username and wait until Player-2 joins</li>
+          <li>A new game is created and room number is generated</li>
+          <li>Join TicTacToe : Player-2 enter the username and the room id created by Player-1.</li>
+          <li> Player-1 has the first turn with 'X' sign</li>
+          <li> Player-2 has the second turn with 'O' sign</li>
+        </ul>
+      </div>
+
+      <br><br><br><br><br>
+
+      <div class="createjoin">
+
+        <div class="row">
+          <div class="col-sm-6" >
+            <h4>Create TicTacToe</h4>
+            <input type="text" class="ghost-input" name="name" id="nameNew" placeholder="Username" required> <br>
+            <button type="button" class="btn btn-default" id="new">New Game</button>
+          </div>
+          <div class="col-sm-6" >
+            <h4>Join Room</h4>
+            <input type="text" class="ghost-input" name="name" id="nameJoin" placeholder="Username" required>
+            <br>
+            <input type="text" class="ghost-input" name="room" id="room" placeholder="Room number" required> <br>
+            <button type="button" class="btn btn-default" id="join">Join Game</button>
+          </div>
+        </div>
+        
+      </div>
+
+      <div class="gameBoard">
+        <h2 id="userHello"></h2>
+        <h3 id="turn"></h3>
+        <table class="center">
+          <tr>
+            <td><button class="tile" id="button_00"></button></td>
+            <td><button class="tile" id="button_01"></button></td>
+            <td><button class="tile" id="button_02"></button></td>
+          </tr>
+          <tr>
+            <td><button class="tile" id="button_10"></button></td>
+            <td><button class="tile" id="button_11"></button></td>
+            <td><button class="tile" id="button_12"></button></td>
+          </tr>
+          <tr>
+            <td><button class="tile" id="button_20"></button></td>
+            <td><button class="tile" id="button_21"></button></td>
+            <td><button class="tile" id="button_22"></button></td>
+          </tr>
+        </table>
+      </div>
+
+      <footer>&copy; tictactoe</footer>
+
+    </div>
+
+    <!---</div>-->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

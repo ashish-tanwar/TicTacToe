@@ -1,0 +1,89 @@
+header
+{	
+	position: fixed;
+	left: 0;
+    top: 0;
+    width: 100%;
+	background-color: #3b5998;
+	color: white;
+	text-align: center;
+}
+
+footer
+{
+	position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #3b5998;
+    color: white;
+    text-align: center;
+}
+
+.instruction
+{
+	margin: 1em 0 0 0;
+	text-align:center;
+	color: #696969;
+}
+
+.createjoin
+{
+	text-align:center;
+}
+
+ul
+{
+	list-style-type: none;
+}
+
+.ghost-input {
+  /*display: block;*/
+  text-align: center;
+  font-weight:300;
+  width: 100%;
+  /*font-size: 25px;*/
+  border:0px;
+  outline: none;
+  /*width: 100%;*/
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #4b545f;
+  background: #fff;
+  font-family: Open Sans,Verdana;
+  /*padding: 10px 15px;
+  margin: 30px 0px;*/
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+.play, .ol, .insert{
+	padding: 25px;
+	color: black;
+	text-align: left;
+	display: block;
+	text-decoration: none;
+}
+
+.tile{
+	width: 80px;
+	height: 80px;
+	font-size: 60px;
+	font-family: Helvetica; 
+}
+
+.gameBoard{
+	display: none;
+}
+
+/*.mm-chat{
+	display: none;
+}*/
+
+.center{
+	margin: 0 auto;
+}
